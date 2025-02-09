@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(200, 200, 200);
+  align-items: center;
+}
+
+img {
+  height: 100%;
+}
+
+.nav-link-container {
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+}
+
+a {
+  height: 100%;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+a:hover {
+  font-weight: bold;
+  transform: translateY(-3px);
+}
+
+.nav-link-divider {
+  border: 1px solid rgb(0, 0, 200);
+
+}
+
+#durability {
+  padding: 50px 0 0 0;
+}
+
+main {
+  margin: 30px 10px 10px 10px;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Tahoma;
+  font-size: 30px;
+  padding-bottom: 20px;
+
+}
+
+h1, h2, p, h3 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#durability h2 {
+  font-size: 25px;
+}
+
+iframe {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16 / 9;
+  margin: auto;
+  border-radius: 10px;
+}
+
+iframe:hover, iframe:active {
+  border-radius: 0;
+}
+
+#products h2 {
+  padding-top: 40px;
+}
+
+.catalog-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 500px;
+  border: 2px solid rgb(150, 150, 150);
+  border-radius: 5px;
+  margin: 10px;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.phone-img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 50%;
+  height: 30px;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(50, 50, 250);
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 60%;
+  height: 30px;
+  margin: 5px auto;
+}
+
+#email {
+  padding: 10px;
+}
+
+#submit {
+  cursor: pointer;
+
+}
+
+@media(max-width: 800px) {
+  input {
+    width: 80%;
+  }
+}
+
+@media(max-width: 580px) {
+  input {
+    width: 100%;
+  }
+
+  #nav-bar {
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header-img {
+    height: 30px;
+  }
+
+
+  .nav-link-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
